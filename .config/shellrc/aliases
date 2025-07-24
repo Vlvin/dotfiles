@@ -1,0 +1,9 @@
+alias av=' 
+	if [[ -f .venv/bin/activate ]]; then 
+		. .venv/bin/activate; 
+	else
+		echo \"not a python project\"; 
+	fi
+'
+
+alias denv='. $HOME/.zshrc'

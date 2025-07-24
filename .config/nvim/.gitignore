@@ -1,0 +1,10 @@
+tags
+test.sh
+.luarc.json
+nvim
+:W
+doc/
+LICENCE.md
+README.md
+spell/
+lazy-lock.json
