@@ -1,0 +1,3 @@
+[submodule ".config/tmux/plugins/tmux-pomodoro-plus"]
+	path = .config/tmux/plugins/tmux-pomodoro-plus
+	url = git@github:olimorris/tmux-pomodoro-plus

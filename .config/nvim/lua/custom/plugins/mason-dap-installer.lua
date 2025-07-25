@@ -14,12 +14,6 @@ M.dependencies = {
   'theHamsta/nvim-dap-virtual-text',
   'mfussenegger/nvim-dap',
 }
-M.nvim_dap_to_package = {
-  javascript = 'js-debug-adapter',
-  typescript = 'js-debug-adapter',
-  python = 'debugpy',
-  ['lua'] = 'local-lua-debugger-vscode',
-}
 M.config = function()
   local mason_dap = require 'mason-nvim-dap'
   local dap = require 'dap'
@@ -27,22 +21,48 @@ M.config = function()
   local dap_vt = require 'nvim-dap-virtual-text'
 
   dap_vt.setup()
+  local daps = {}
+  for dap, _ in pairs(require('mason-nvim-dap.mappings.source').nvim_dap_to_package) do
+    daps[dap] = dap
+  end
+  local assert_dap = function(dap_name)
+    assert(daps[dap_name] or false, 'No such dap: ' .. dap_name)
+    return daps[dap_name]
+  end
 
-  local languages = { 'js', 'ts', 'python', 'lua' }
+  local configurations = {
+    javascript = { dap = assert_dap 'firefox' },
+    typescript = { dap = assert_dap 'firefox' },
+    python = { dap = assert_dap 'python' },
+    c = { dap = assert_dap 'cppdbg' },
+    cpp = { dap = assert_dap 'cppdbg' },
+    bash = { dap = assert_dap 'bash' },
+  }
+  -- remove duplicates from enseure installed
+  local seen = {}
+  for _, v in pairs(configurations) do
+    seen[v.dap] = true
+  end
+  local ensure_installed = vim.tbl_map(function(k)
+    return k
+  end, vim.tbl_keys(seen))
+  seen = {}
+
   mason_dap.setup {
-    ensure_installed = languages,
+    ensure_installed = ensure_installed, -- automatically install languages,
     automatic_installation = true,
+    automatic_setup = true,
     handlers = {
       function(config)
         require('mason-nvim-dap').default_setup(config)
       end,
     },
   }
-  for language in pairs(languages) do
-    dap.configurations[language] = {
+  for language, info in ipairs(configurations) do
+    dap.configurations[info.dap] = {
       {
         type = 'executable',
-        command = M.nvim_dap_to_package[language],
+        command = vim.fn.exepath(info.dap),
       },
     }
   end
