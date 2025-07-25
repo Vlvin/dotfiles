@@ -1,3 +1,15 @@
 [submodule ".config/tmux/plugins/tmux-pomodoro-plus"]
 	path = .config/tmux/plugins/tmux-pomodoro-plus
-	url = git@github:olimorris/tmux-pomodoro-plus
+	url = https://github.com/olimorris/tmux-pomodoro-plus
+[submodule ".config/tmux/plugins/tmux-gruvbox"]
+	path = .config/tmux/plugins/tmux-gruvbox
+	url = https://github.com/egel/tmux-gruvbox
+[submodule ".config/tmux/plugins/tmux-sensible"]
+	path = .config/tmux/plugins/tmux-sensible
+	url = https://github.com/tmux-plugins/tmux-sensible
+[submodule ".config/tmux/plugins/tmux-sidebar"]
+	path = .config/tmux/plugins/tmux-sidebar
+	url = https://github.com/tmux-plugins/tmux-sidebar
+[submodule ".config/tmux/plugins/tpm"]
+	path = .config/tmux/plugins/tpm
+	url = https://github.com/tmux-plugins/tpm
