@@ -1,0 +1,16 @@
+.config/*
+
+!.config/btop
+!.config/hyprtimer
+!.config/kitty
+!.config/rofi
+!.config/tmux
+!.config/cava
+!.config/fastfetch
+!.config/hypr
+!.config/i3
+!.config/nvim
+!.config/qutebrowser
+!.config/shellrc
+!.config/waybar
+
