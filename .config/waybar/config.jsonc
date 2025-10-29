@@ -14,7 +14,7 @@
         ],
 	"modules-right": [
         	"idle_inhibitor",
-        	"pulseaudio",
+        	"wireplumber",
         	"backlight",
         	"keyboard-state",
         	"hyprland/language",
@@ -125,7 +125,7 @@
         "format-disconnected": "Disconnected ⚠",
         "format-alt": "{ifname}: {ipaddr}/{cidr}"
     },
-    "pulseaudio": {
+    "wireplumber": {
         // "scroll-step": 1, // %, can be a float
         "format": "{volume}% {icon} {format_source}",
         "format-bluetooth": "{volume}% {icon} {format_source}",

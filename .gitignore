@@ -1,7 +1,6 @@
 .config/*
 
 !.config/btop
-!.config/hyprtimer
 !.config/kitty
 !.config/rofi
 !.config/tmux
@@ -9,8 +8,11 @@
 !.config/fastfetch
 !.config/hypr
 !.config/i3
+!.config/sway
 !.config/nvim
 !.config/qutebrowser
 !.config/shellrc
 !.config/waybar
+!.config/dwl
+!.config/st
 
