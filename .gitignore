@@ -14,5 +14,7 @@
 !.config/shellrc
 !.config/waybar
 !.config/dwl
+!.config/somebar
+!.config/someblocks
 !.config/st
 

@@ -13,3 +13,24 @@
 [submodule ".config/tmux/plugins/tpm"]
 	path = .config/tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm
+[submodule ".config/dwl"]
+	path = .config/dwl
+	url = https://github.com/Vlvin/dwl
+[submodule ".config/somebar"]
+	path = .config/somebar
+	url = https://github.com/Vlvin/somebar
+[submodule ".config/someblocks"]
+	path = .config/someblocks
+	url = https://github.com/Vlvin/someblocks
+[submodule ".config/shellrc/plugins/zsh-autosuggestions"]
+	path = .config/shellrc/plugins/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions
+[submodule ".config/shellrc/plugins/zsh-syntax-highlighting"]
+	path = .config/shellrc/plugins/zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting
+[submodule ".config/shellrc/plugins/zsh-256color"]
+	path = .config/shellrc/plugins/zsh-256color
+	url = https://github.com/chrissicool/zsh-256color
+[submodule ".config/shellrc/powerlevel10k"]
+	path = .config/shellrc/powerlevel10k
+	url = https://github.com/romkatv/powerlevel10k
