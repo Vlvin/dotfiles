@@ -34,6 +34,3 @@
 [submodule ".config/shellrc/powerlevel10k"]
 	path = .config/shellrc/powerlevel10k
 	url = https://github.com/romkatv/powerlevel10k
-[submodule ".config/st"]
-	path = .config/st
-	url = https://github.com/Vlvin/st.git
