@@ -1,0 +1,105 @@
+(defsrc
+;;ret met alt ctl sft
+  a   s   d   f   g
+  ;   l   k   j   h
+;; arrows mod
+  b n
+;; nums mod
+  v m
+)
+
+(defcfg
+  process-unmapped-keys
+  true
+)
+
+(defvar
+  tap-time 200
+  hold-time 200
+)
+
+(defalias
+  a-mod (tap-hold $tap-time $hold-time a ret)
+  s-mod (tap-hold $tap-time $hold-time s lmet)
+  d-mod (tap-hold $tap-time $hold-time d lalt)
+  f-mod (tap-hold $tap-time $hold-time f lctl)
+  g-mod (tap-hold $tap-time $hold-time g lsft)
+  h-mod (tap-hold $tap-time $hold-time h rsft)
+  j-mod (tap-hold $tap-time $hold-time j rctl)
+  k-mod (tap-hold $tap-time $hold-time k ralt)
+  l-mod (tap-hold $tap-time $hold-time l rmet)
+  ;-mod (tap-hold $tap-time $hold-time ; ent)
+  b-mod (tap-hold-release $tap-time $hold-time b (layer-while-held arrows))
+  n-mod (tap-hold-release $tap-time $hold-time n (layer-while-held arrows))
+  v-mod (tap-hold-release $tap-time $hold-time v  (layer-while-held nums_v))
+  m-mod (tap-hold-release $tap-time $hold-time m (layer-while-held nums_m))
+)
+
+(deflayer base
+  @a-mod
+  @s-mod
+  @d-mod
+  @f-mod
+  @g-mod
+  @;-mod
+  @l-mod
+  @k-mod
+  @j-mod
+  @h-mod
+  @b-mod
+  @n-mod
+  @v-mod
+  @m-mod
+)
+
+(deflayer arrows
+  @a-mod
+  @s-mod
+  @d-mod
+  @f-mod
+  @g-mod
+  @;-mod
+  right
+  up
+  down
+  left
+  _
+  _
+  bspc
+  bspc
+)
+
+(deflayer nums_m
+  1
+  2
+  3
+  4
+  5
+  @;-mod
+  @l-mod
+  @k-mod
+  @j-mod
+  @h-mod
+  ret
+  rsft
+  bspc ;; @v-nums-mod
+  _ ;; @m-mod
+)
+
+
+(deflayer nums_v
+  @a-mod
+  @s-mod
+  @d-mod
+  @f-mod
+  @g-mod
+  0
+  9
+  8
+  7
+  6
+  lsft
+  esc
+  _ ;; @v-nums-mod
+  bspc ;; @m-nums-mod
+)

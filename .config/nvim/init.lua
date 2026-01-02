@@ -30,6 +30,11 @@ vim.opt.rtp:prepend(lazypath)
 
 
 local servers = {
+  marksman = {
+    cmd = { "marksman", "server" },
+    filetypes = { "markdown", "markdown.mdx" },
+    root_markers = { ".marksman.toml", ".git" }
+  },
   ["lua-language-server"] = {
     name = "lua_ls",
     cmd = { "lua-language-server" },
@@ -73,6 +78,14 @@ local servers = {
   -- 	filetypes = { 'python' },
   -- 	root_markers = { 'pyproject.toml', 'ruff.toml', '.ruff.toml', '.git' },
   -- },
+  qmlls = {
+    cmd = { 'qmlls' },
+    filetypes = { 'qml', 'qmljs' },
+    -- root_dir = function(fname)
+    --   return vim.fs.dirname(vim.fs.find('.git', { path = fname, upward = true })[1])
+    -- end,
+    single_file_support = true,
+  },
   basedpyright = {
     cmd = { "basedpyright-langserver", "--stdio" },
     filetypes = { 'python' },
@@ -181,8 +194,13 @@ require('lazy').setup({
   'https://github.com/nvim-tree/nvim-web-devicons',
   { 'https://github.com/windwp/nvim-autopairs',     opts = {} },
   { 'https://github.com/nvim-lualine/lualine.nvim', opts = {} },
-  { 'https://github.com/OXY2DEV/markview.nvim',     opts = {} },
-  { 'https://github.com/folke/todo-comments.nvim',  opts = {} },
+  {
+    'https://github.com/OXY2DEV/markview.nvim',
+    opts = {
+
+    }
+  },
+  { 'https://github.com/folke/todo-comments.nvim',    opts = {} },
   {
     'https://github.com/kawre/leetcode.nvim',
     dependencies = {
@@ -192,12 +210,12 @@ require('lazy').setup({
     opts = {}
   },
   {
-{
-  'chomosuke/typst-preview.nvim',
-  lazy = false, -- or ft = 'typst'
-  version = '1.*',
-  opts = {}, -- lazy.nvim will implicitly calls `setup {}`
-}  },
+    {
+      'chomosuke/typst-preview.nvim',
+      lazy = false, -- or ft = 'typst'
+      version = '1.*',
+      opts = {},    -- lazy.nvim will implicitly calls `setup {}`
+    } },
   {
     'https://github.com/nvim-neorg/neorg',
     lazy = false,
@@ -294,9 +312,9 @@ require('lazy').setup({
           enabled = true
         },
         image = {
-          enabled = true,
+          enabled = false,
           math = {
-            enabled = false,
+            enabled = true,
             typst = {
               tpl = [[
           #set page(width: auto, height: auto, margin: (x: 2pt, y: 2pt))
@@ -305,11 +323,11 @@ require('lazy').setup({
           #set par(leading: 0.65em)
           ${header}
           ${content}]]
-            }
+            },
           },
           doc = {
-            inline = false,
-          }
+            inline = true,
+          },
 
         },
       })
@@ -332,6 +350,10 @@ require('lazy').setup({
       vim.keymap.set('n', '<leader>sd', function() picker = Snacks.picker.diagnostics() end,
         { desc = '[S]earch [D]iagnostics' })
       vim.keymap.set('n', '<leader>sf', function() picker = Snacks.picker.files() end, { desc = '[S]earch [F]iles' })
+      vim.keymap.set('n', '<leader>sS', function() picker = Snacks.picker.lsp_symbols() end,
+        { desc = '[S]earch [S]ymbols' })
+      vim.keymap.set('n', '<leader>ss', function() picker = Snacks.picker.lsp_workspace_symbols() end,
+        { desc = '[S]earch [s]ymbols' })
       vim.keymap.set('n', '<leader>sb', function() picker = Snacks.picker.buffers() end, { desc = '[S]earch [B]uffers' })
       vim.keymap.set('n', '<leader>sg', function() picker = Snacks.picker.grep() end, { desc = '[S]earch [G]rep' })
       vim.keymap.set('n', '<leader>sh', function() picker = Snacks.picker.help() end, { desc = '[S]earch [H]elp' })
@@ -427,8 +449,16 @@ require('lazy').setup({
               score_offset = 100,
             }
           }
+        },
+        signature = {
+          enabled = true
         }
       })
+
+      vim.keymap.set("i", "<M-d>", function() blink.scroll_documentation_down(4) end,
+        { desc = "Scroll documentation down" })
+      vim.keymap.set("i", "<M-u>", function() blink.scroll_documentation_up(4) end,
+        { desc = "Scroll documentation down" })
 
 
       for name, opt in pairs(servers) do
@@ -477,7 +507,7 @@ require('lazy').setup({
       vim.keymap.set('n', '<M-l>', function() ssplits.resize_right(5) end, { desc = "resize pane right" })
     end
   },
-  { 'https://github.com/nvim-mini/mini.surround',     opts = {} },
+  { 'https://github.com/nvim-mini/mini.surround', opts = {} },
 })
 
 

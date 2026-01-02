@@ -17,3 +17,15 @@ alias tmux='wl-copy $(pwd);cd ~; tmux'
 alias ls='ls --color=auto'
 
 alias nvim='bob run nightly'
+
+function random {
+  echo $(date -u +%N)
+}
+
+function random_wallpaper {
+  [[ "$WALLPAPER_PATH" == "" ]] && WALLPAPER_PATH=$HOME"/.config/wallpapers"
+  local wallpapers=($(ls "$WALLPAPER_PATH"))
+  local len=${#wallpapers}
+  local index=$(( ($( random ) % (len - 1)) + 1 ))
+  echo "$WALLPAPER_PATH/${wallpapers[index]}"
+}

@@ -35,3 +35,4 @@ vim.opt.signcolumn = "yes"
   vim.o.foldexpr = 'nvim_treesitter#foldexpr()'
   -- Colors
   vim.o.termguicolors = true
+vim.opt.mouse = ""

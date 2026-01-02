@@ -13,7 +13,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # source /usr/share/cachyos-zsh-config/cachyos-config.zsh
-
+ZSH_AUTOSUGGEST_STRATEGY=(match_prev_cmd completion)
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
@@ -31,7 +31,7 @@ discover_rc_path () {
 
 RC_PATH=$(discover_rc_path)
 
-if [[ $RC_PATH == "" ]]; then
+if [[ "$RC_PATH" == "" ]]; then
 	echo "No shellrc was discovered"
 	echo "lookup locations are:"
 	for rc_path in $guesses; do
@@ -49,3 +49,7 @@ for rc in $(ls $RC_PATH); do
 		source "$RC_PATH/$rc"
 	fi
 done
+
+if [ -f "$RC_PATH/-plugins.sh" ]; then
+  source "$RC_PATH/-plugins.sh";
+fi

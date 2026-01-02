@@ -1,2 +1,0 @@
-#! /usr/bin/bash 
-exec waybar -c $XDG_CONFIG_HOME/sway/waybar/config.jsonc -s $XDG_CONFIG_HOME/sway/waybar/style.css
