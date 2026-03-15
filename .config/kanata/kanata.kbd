@@ -3,9 +3,9 @@
   a   s   d   f   g
   ;   l   k   j   h
 ;; arrows mod
-  b n
-;; nums mod
   v m
+;; nums mod
+  c ,
 )
 
 (defcfg
@@ -29,10 +29,10 @@
   k-mod (tap-hold $tap-time $hold-time k ralt)
   l-mod (tap-hold $tap-time $hold-time l rmet)
   ;-mod (tap-hold $tap-time $hold-time ; ent)
-  b-mod (tap-hold-release $tap-time $hold-time b (layer-while-held arrows))
-  n-mod (tap-hold-release $tap-time $hold-time n (layer-while-held arrows))
-  v-mod (tap-hold-release $tap-time $hold-time v  (layer-while-held nums_v))
-  m-mod (tap-hold-release $tap-time $hold-time m (layer-while-held nums_m))
+  b-mod (tap-hold-release $tap-time $hold-time _ (layer-while-held arrows))
+  n-mod (tap-hold-release $tap-time $hold-time _ (layer-while-held arrows))
+  v-mod (tap-hold-release $tap-time $hold-time _ (layer-while-held nums_v))
+  m-mod (tap-hold-release $tap-time $hold-time _ (layer-while-held nums_m))
 )
 
 (deflayer base

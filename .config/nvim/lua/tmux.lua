@@ -1,0 +1,7 @@
+vim.keymap.set("n", "<C-f>n", "<CMD>tabnext<CR>")
+vim.keymap.set("n", "<C-f>p", "<CMD>tabprev<CR>")
+vim.keymap.set("n", "<C-f>x", "<CMD>tabclose<CR>")
+vim.keymap.set("n", "<C-f>c", function()
+  vim.cmd.tabnew()
+  vim.cmd.lcd("~")
+end)

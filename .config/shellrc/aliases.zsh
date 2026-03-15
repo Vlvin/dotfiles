@@ -16,7 +16,7 @@ alias denv='. $HOME/.zshrc'
 alias tmux='wl-copy $(pwd);cd ~; tmux'
 alias ls='ls --color=auto'
 
-alias nvim='bob run nightly'
+alias nvim='bob run nightly --'
 
 function random {
   echo $(date -u +%N)

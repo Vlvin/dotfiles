@@ -30,3 +30,14 @@ settings:
     https://mail.google.com?extsrc=mailto&url=%25s: false
   downloads.prevent_mixed_content:
     global: false
+  editor.command:
+    global:
+    - kitty
+    - --
+    - nvim
+    - --
+    - '{file}'
+  statusbar.show:
+    global: always
+  tabs.show:
+    global: always

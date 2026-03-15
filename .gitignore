@@ -6,6 +6,8 @@
 !.config/qutebrowser
 !.config/shellrc
 !.config/dwl
+!.config/mango
+!.config/quickshell
 !.config/somebar
 !.config/someblocks
 !.config/alacritty
@@ -14,8 +16,4 @@
 !.config/rofi
 !.config/tmux
 !.config/cava
-!.config/hypr
-!.config/i3
-!.config/sway
 !.config/waybar
-!.config/st

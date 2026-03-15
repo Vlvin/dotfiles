@@ -1,0 +1,1 @@
+dwlmsg -g | awk '/layout/ {print $3}'
