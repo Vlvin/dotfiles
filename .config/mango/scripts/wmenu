@@ -1,2 +1,2 @@
 #!/usr/bin/env sh
-wmenu-run -f "FiraCode Nerd Font 12" -N 000000 -n 93A1A1 -M 000000 -m 93A1A1 -S 9900BB -s EEEEEE
+cat $XDG_CONFIG_HOME/wmenuc/config.txt | xargs wmenu-run

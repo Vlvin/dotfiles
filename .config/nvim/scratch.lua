@@ -1,3 +1,1 @@
-for key,val in pairs(vim.g.useropts) do
-  print(key,val)
-end
+vim.system({"zsh", "-i"}, { text = true })

@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+POWER_CHOICE=$(echo -e "shutdown\nreboot" | wmenu -l 2)
+case $POWER_CHOICE in
+  "shutdown") systemctl poweroff
+  ;;
+  "reboot") systemctl reboot
+  ;;
+esac

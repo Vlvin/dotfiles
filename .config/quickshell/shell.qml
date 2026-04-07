@@ -11,6 +11,7 @@ PanelWindow {
   property var default_color: "#FF7700"
   property var background_color: "#00000000"
   property var default_font_size: 13
+  property var home: Quickshell.env("HOME")
   anchors {
     top: true
     left: true
@@ -37,7 +38,7 @@ PanelWindow {
         Layout.bottomMargin: isActive ? (root.implicitHeight - implicitHeight)/2 : (implicitHeight - root.implicitHeight)/2
         Process {
           id: tagsActiveProc
-          command: ["/home/potato/.config/quickshell/scripts/tags.sh", "selected"]
+          command: [root.home+"/.config/quickshell/scripts/tags.sh", "selected"]
           stdout: SplitParser {
             onRead: data => {
               if (!data) return
@@ -54,7 +55,7 @@ PanelWindow {
         }
         Process {
           id: tagsNEProc
-          command: ["/home/potato/.config/quickshell/scripts/tags.sh", "non_empty"]
+          command: [root.home+"/.config/quickshell/scripts/tags.sh", "non_empty"]
           stdout: SplitParser {
             onRead: data => {
               if (!data) return
@@ -108,7 +109,7 @@ PanelWindow {
       Layout.fillWidth: true
       Process {
         id: appnameProc
-        command: ["/home/potato/.config/quickshell/scripts/app.sh"]
+        command: [root.home+"/.config/quickshell/scripts/app.sh"]
         stdout: StdioCollector {
           waitForEnd: true
         }
@@ -136,7 +137,7 @@ PanelWindow {
       }
       Process {
         id: ipstatProc
-        command: ["/home/potato/.config/quickshell/scripts/ip.sh"]
+        command: [root.home+"/.config/quickshell/scripts/ip.sh"]
         stdout: StdioCollector {
           waitForEnd: true
         }
@@ -164,7 +165,7 @@ PanelWindow {
       }
       Process {
         id: memstatProc
-        command: ["/home/potato/.config/quickshell/scripts/mem.sh"]
+        command: [root.home+"/.config/quickshell/scripts/mem.sh"]
         stdout: StdioCollector {
           waitForEnd: true
         }
@@ -192,7 +193,7 @@ PanelWindow {
       }
       Process {
         id: cpustatProc
-        command: ["/home/potato/.config/quickshell/scripts/cpu.sh"]
+        command: [root.home+"/.config/quickshell/scripts/cpu.sh"]
         stdout: StdioCollector {
           waitForEnd: true
         }
@@ -221,7 +222,7 @@ PanelWindow {
       }
       Process {
         id: batstatProc
-        command: ["/home/potato/.config/quickshell/scripts/bat.sh"]
+        command: [root.home+"/.config/quickshell/scripts/bat.sh"]
         stdout: StdioCollector {
           waitForEnd: true
         }
@@ -251,7 +252,7 @@ PanelWindow {
       }
       Process {
         id: langlayoutProc
-        command: ["/home/potato/.config/quickshell/scripts/layout.sh"]
+        command: [root.home+"/.config/quickshell/scripts/layout.sh"]
         stdout: StdioCollector {
           waitForEnd: true
         }

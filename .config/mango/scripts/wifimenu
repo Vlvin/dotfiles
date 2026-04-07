@@ -1,0 +1,14 @@
+#!/usr/bin/env sh
+WIFI_CHOICE=$(
+  nmcli device wifi list | # scan and show wifi (ap's)
+  tail -n +2 | # get rid of headers
+  sed 's/^.*--.*$//;s/^[* ]\+[0-9A-F:]\+ \+\([^ ].*[^ ]\) \+Infra.*$/\1/g;/^$/d' | # get rid of everything except ap's names
+  wmenu -l 5 -p wifi: # promt user with ap's
+)
+nmcli device wifi connect "$WIFI_CHOICE"
+RESULT=$?
+# connected       || interrupted by user|| ask for password
+[ $RESULT -eq 0 ] || [ $RESULT -eq 10 ] || 
+  echo "" |
+  wmenu -l 0 -P -p password: |
+  xargs nmcli device wifi connect "$WIFI_CHOICE" password

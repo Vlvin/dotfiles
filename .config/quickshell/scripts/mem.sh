@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/sh
 # | sed 's/Gi//g'
 USED=$(free -h | awk '/^Mem/ { print $3 }')
 USED_MOD=1;
