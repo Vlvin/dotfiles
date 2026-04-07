@@ -17,8 +17,8 @@ ZSH_AUTOSUGGEST_STRATEGY=(match_prev_cmd completion)
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-source $HOME/.profile
-guesses=("$XDG_CONFIG_HOME/shellrc" "$HOME/.dotfiles/shellrc" "$HOME/.shellrc")
+# source $HOME/.profile
+guesses=("$XDG_CONFIG_HOME/shellrc" "$HOME/.config/shellrc" "$HOME/.dotfiles/shellrc" "$HOME/.shellrc")
 discover_rc_path () {
 	for rc_path in $guesses; do
 		if [ -d "$rc_path" ]; then
