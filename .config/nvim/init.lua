@@ -35,9 +35,4 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup("plugins")
 vim.cmd.colorscheme("onedark")
--- vim.cmd [[
---   highlight Normal guibg=none
---   highlight NonText guibg=none
---   highlight Normal ctermbg=none
---   highlight NonText ctermbg=none
--- ]]
+require('langmapper').automapping({ global = true, buffer = true })

@@ -21,7 +21,7 @@ return {
 				enabled = true,
 				inline = true,
         math = {
-          enabled = false
+          enabled = true
         }
 			},
 		})

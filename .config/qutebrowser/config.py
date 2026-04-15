@@ -2470,7 +2470,6 @@ config.bind("J", "tab-prev")
 # config.bind('<Shift-Ins>', 'insert-text -- {primary}', mode='insert')
 
 ## Bindings for passthrough mode
-# config.bind('<Shift-Escape>', 'mode-leave', mode='passthrough')
 
 ## Bindings for prompt mode
 # config.bind('<Alt-B>', 'rl-backward-word', mode='prompt')

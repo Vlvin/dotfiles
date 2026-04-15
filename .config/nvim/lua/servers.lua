@@ -81,6 +81,7 @@ return {
 		cmd = { "clangd", "--completion-style=detailed" },
 		root_markers = { ".clangd", "compile_commands.json" },
 		filetypes = { "c", "cpp" },
+    autoinstall = false
 	},
 	tinymist = {
 		filetypes = { "typst" },
