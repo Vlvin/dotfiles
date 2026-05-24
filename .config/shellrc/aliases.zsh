@@ -16,16 +16,29 @@ alias denv='. $HOME/.zshrc'
 alias tmux='wl-copy $(pwd);cd ~; tmux'
 alias ls='ls --color=auto'
 
-alias nvim='bob run v0.12.0 --'
+alias _nvim='~/.local/share/bob/$(cat ~/.local/share/bob/used)/bin/nvim'
+
+function nvim {
+  NVIM_SOCK=$(mktemp -p $HOME/.cache/nvim/socks -t nvim.sock.XXX)
+  NVIM_SESS=$HOME/.cache/nvim/sessions/${NVIM_SOCK##*/}
+  ln -sn $NVIM_SOCK $NVIM_SESS
+  rm $NVIM_SOCK
+  _nvim --listen $NVIM_SESS $@
+}
+function wqa {
+  for sock in $(ls ~/.cache/nvim/socks/*); do
+    _nvim --server $sock --remote-send "<CMD>wqa<CR>"
+  done
+}
 
 function random {
   echo $(date -u +%N)
 }
 
 function random_wallpaper {
-  [[ "$WALLPAPER_PATH" == "" ]] && WALLPAPER_PATH=$HOME"/.config/wallpapers"
-  local wallpapers=($(ls "$WALLPAPER_PATH"))
+  [ "$WALLPAPER_PATH" = "" ] && WALLPAPER_PATH=$HOME"/.config/wallpapers"
+  local wallpapers=("$WALLPAPER_PATH"/**/*)
   local len=${#wallpapers}
   local index=$(( ($( random ) % (len - 1)) + 1 ))
-  echo "$WALLPAPER_PATH/${wallpapers[index]}"
+  echo "${wallpapers[index]}"
 }

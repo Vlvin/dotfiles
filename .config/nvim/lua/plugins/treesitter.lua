@@ -1,6 +1,7 @@
 return {
     "https://github.com/nvim-treesitter/nvim-treesitter",
     version = "*",
+    branch = "main",
     config = function()
       require('nvim-treesitter').setup()
       require('nvim-treesitter.configs').setup({

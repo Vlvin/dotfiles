@@ -14,6 +14,7 @@
 !.config/alacritty
 !.config/kanata
 !.config/kitty
+!.config/foot
 !.config/rofi
 !.config/tmux
 !.config/cava

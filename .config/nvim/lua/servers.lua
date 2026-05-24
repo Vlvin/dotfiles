@@ -18,6 +18,7 @@ return {
         }
 			},
 		},
+    autoinstall = false
 	},
 	["lua-language-server"] = {
 		name = "lua_ls",
@@ -57,6 +58,11 @@ return {
 			-- }
 		},
 	},
+  ["asm-lsp"] = {
+		filetypes = { "asm", "S", "s" },
+		root_markers = { "main.asm", "Makefile", ".asm-lsp.toml", ".git" },
+    autoinstall = false
+  },
 	basedpyright = {
 		cmd = { "basedpyright-langserver", "--stdio" },
 		filetypes = { "python" },
