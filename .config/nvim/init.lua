@@ -35,4 +35,4 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup("plugins")
 vim.cmd.colorscheme("onedark")
-require('langmapper').automapping({ global = true, buffer = true })
+-- require("langmapper").automapping({ global = true, buffer = true })

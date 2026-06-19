@@ -18,10 +18,10 @@ return {
 				enabled = true,
 			},
 			image = {
-				enabled = true,
+				enabled = false,
 				inline = true,
         math = {
-          enabled = true
+          enabled = false
         }
 			},
 		})

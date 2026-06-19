@@ -37,3 +37,6 @@
 [submodule ".config/wmenu"]
 	path = .config/wmenu
 	url = https://github.com/Vlvin/wmenu
+[submodule ".config/rmpc/theme-switcher"]
+	path = .config/rmpc/theme-switcher
+	url = https://github.com/animegolem/RMPC-Auto-Theme

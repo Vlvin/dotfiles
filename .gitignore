@@ -21,3 +21,8 @@
 !.config/waybar
 !.config/neovide
 !.config/plymouth
+!.config/rmpc
+!.config/runit
+!.config/scripts
+!.config/zathura
+
