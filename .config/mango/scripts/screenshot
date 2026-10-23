@@ -1,2 +1,2 @@
 #!/usr/bin/env sh
-grim -t png - | wl-copy -t image/png
+exec grim -t png - | wl-copy -t image/png

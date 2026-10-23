@@ -30,11 +30,13 @@ vim.opt.scrolloff = 10
 -- fold blocks
 vim.o.foldenable = true
 vim.o.foldlevel = 99
+vim.o.foldlevelstart = 99
+vim.o.foldexpr = "v:lua.vim.treesitter.foldexpr()"
 vim.o.foldmethod = "expr"
-vim.o.foldexpr = "nvim_treesitter#foldexpr()"
+--
 -- Colors
 vim.o.termguicolors = true
 vim.opt.mouse = ""
 vim.useropts.font_size = 12
-vim.useropts.transparent = false
+vim.useropts.transparent = true
 -- vim.opt.cmdheight = 0

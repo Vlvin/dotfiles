@@ -30351,3 +30351,279 @@ Theme written to: /home/vlvin/.config/rmpc/themes/current-song.ron
 [2026-06-18 00:15:21] Extracting album art...
 [2026-06-18 00:15:21] Album art extracted successfully
 [2026-06-18 00:15:21] Album art hash unchanged; skipping theme generation (skip_count=220)
+[2026-08-16 14:08:18] ========== Song Change Detected ==========
+[2026-08-16 14:08:18] File: Joe Satriani/1986 - Not Of This Earth (Relativity Records, 462972 2, Austria)/Joe Satriani - Not Of This Earth.cue/track0001
+[2026-08-16 14:08:18] Artist: Joe Satriani
+[2026-08-16 14:08:18] Title: Not Of This Earth
+[2026-08-16 14:08:18] Extracting album art...
+[38;5;3mWARN[0m: Expected binary data but got 'OK' 
+[38;5;1mERROR[0m: Read MPD line with error line="ACK [50@0] {albumart} No file exists" 
+[38;5;1mERROR[0m: Read MPD line with error line="ACK [50@0] {albumart} No file exists" 
+[2026-08-16 14:08:18] ERROR: Album art extraction failed
+[2026-08-16 17:57:49] ========== Song Change Detected ==========
+[2026-08-16 17:57:49] File: Joe Satriani/1986 - Not Of This Earth (Relativity Records, 462972 2, Austria)/Joe Satriani - Not Of This Earth.cue/track0002
+[2026-08-16 17:57:49] Artist: Joe Satriani
+[2026-08-16 17:57:49] Title: The Snake
+[2026-08-16 17:57:49] Extracting album art...
+[38;5;3mWARN[0m: Expected binary data but got 'OK' 
+[38;5;1mERROR[0m: Read MPD line with error line="ACK [50@0] {albumart} No file exists" 
+[38;5;1mERROR[0m: Read MPD line with error line="ACK [50@0] {albumart} No file exists" 
+[2026-08-16 17:57:49] ERROR: Album art extraction failed
+[2026-08-16 18:02:32] ========== Song Change Detected ==========
+[2026-08-16 18:02:32] File: Joe Satriani/1986 - Not Of This Earth (Relativity Records, 462972 2, Austria)/Joe Satriani - Not Of This Earth.cue/track0003
+[2026-08-16 18:02:32] Artist: Joe Satriani
+[2026-08-16 18:02:32] Title: Rubina
+[2026-08-16 18:02:32] Extracting album art...
+[38;5;3mWARN[0m: Expected binary data but got 'OK' 
+[38;5;1mERROR[0m: Read MPD line with error line="ACK [50@0] {albumart} No file exists" 
+[38;5;1mERROR[0m: Read MPD line with error line="ACK [50@0] {albumart} No file exists" 
+[2026-08-16 18:02:32] ERROR: Album art extraction failed
+[2026-08-16 18:08:29] ========== Song Change Detected ==========
+[2026-08-16 18:08:29] File: Joe Satriani/1986 - Not Of This Earth (Relativity Records, 462972 2, Austria)/Joe Satriani - Not Of This Earth.cue/track0004
+[2026-08-16 18:08:29] Artist: Joe Satriani
+[2026-08-16 18:08:29] Title: Memories
+[2026-08-16 18:08:29] Extracting album art...
+[38;5;3mWARN[0m: Expected binary data but got 'OK' 
+[38;5;1mERROR[0m: Read MPD line with error line="ACK [50@0] {albumart} No file exists" 
+[38;5;1mERROR[0m: Read MPD line with error line="ACK [50@0] {albumart} No file exists" 
+[2026-08-16 18:08:29] ERROR: Album art extraction failed
+[2026-08-16 18:12:35] ========== Song Change Detected ==========
+[2026-08-16 18:12:35] File: Joe Satriani/1986 - Not Of This Earth (Relativity Records, 462972 2, Austria)/Joe Satriani - Not Of This Earth.cue/track0005
+[2026-08-16 18:12:35] Artist: Joe Satriani
+[2026-08-16 18:12:35] Title: Brother John
+[2026-08-16 18:12:35] Extracting album art...
+[38;5;3mWARN[0m: Expected binary data but got 'OK' 
+[38;5;1mERROR[0m: Read MPD line with error line="ACK [50@0] {albumart} No file exists" 
+[38;5;1mERROR[0m: Read MPD line with error line="ACK [50@0] {albumart} No file exists" 
+[2026-08-16 18:12:35] ERROR: Album art extraction failed
+[2026-08-16 18:14:46] ========== Song Change Detected ==========
+[2026-08-16 18:14:46] File: Joe Satriani/1986 - Not Of This Earth (Relativity Records, 462972 2, Austria)/Joe Satriani - Not Of This Earth.cue/track0006
+[2026-08-16 18:14:46] Artist: Joe Satriani
+[2026-08-16 18:14:46] Title: The Enigmatic
+[2026-08-16 18:14:46] Extracting album art...
+[38;5;3mWARN[0m: Expected binary data but got 'OK' 
+[38;5;1mERROR[0m: Read MPD line with error line="ACK [50@0] {albumart} No file exists" 
+[38;5;1mERROR[0m: Read MPD line with error line="ACK [50@0] {albumart} No file exists" 
+[2026-08-16 18:14:46] ERROR: Album art extraction failed
+[2026-08-16 18:18:12] ========== Song Change Detected ==========
+[2026-08-16 18:18:12] File: Joe Satriani/1986 - Not Of This Earth (Relativity Records, 462972 2, Austria)/Joe Satriani - Not Of This Earth.cue/track0007
+[2026-08-16 18:18:12] Artist: Joe Satriani
+[2026-08-16 18:18:12] Title: Driving At Night
+[2026-08-16 18:18:12] Extracting album art...
+[38;5;3mWARN[0m: Expected binary data but got 'OK' 
+[38;5;1mERROR[0m: Read MPD line with error line="ACK [50@0] {albumart} No file exists" 
+[38;5;1mERROR[0m: Read MPD line with error line="ACK [50@0] {albumart} No file exists" 
+[2026-08-16 18:18:12] ERROR: Album art extraction failed
+[2026-08-16 18:21:46] ========== Song Change Detected ==========
+[2026-08-16 18:21:46] File: Joe Satriani/1986 - Not Of This Earth (Relativity Records, 462972 2, Austria)/Joe Satriani - Not Of This Earth.cue/track0008
+[2026-08-16 18:21:46] Artist: Joe Satriani
+[2026-08-16 18:21:46] Title: Hordes Of Locusts
+[2026-08-16 18:21:46] Extracting album art...
+[38;5;3mWARN[0m: Expected binary data but got 'OK' 
+[38;5;1mERROR[0m: Read MPD line with error line="ACK [50@0] {albumart} No file exists" 
+[38;5;1mERROR[0m: Read MPD line with error line="ACK [50@0] {albumart} No file exists" 
+[2026-08-16 18:21:46] ERROR: Album art extraction failed
+[2026-08-16 18:26:45] ========== Song Change Detected ==========
+[2026-08-16 18:26:45] File: Joe Satriani/1986 - Not Of This Earth (Relativity Records, 462972 2, Austria)/Joe Satriani - Not Of This Earth.cue/track0009
+[2026-08-16 18:26:45] Artist: Joe Satriani
+[2026-08-16 18:26:45] Title: New Day
+[2026-08-16 18:26:45] Extracting album art...
+[38;5;3mWARN[0m: Expected binary data but got 'OK' 
+[38;5;1mERROR[0m: Read MPD line with error line="ACK [50@0] {albumart} No file exists" 
+[38;5;1mERROR[0m: Read MPD line with error line="ACK [50@0] {albumart} No file exists" 
+[2026-08-16 18:26:45] ERROR: Album art extraction failed
+[2026-08-20 01:24:42] ========== Song Change Detected ==========
+[2026-08-20 01:24:42] File: Joe Satriani/1992 - The Extremist (Relativity Records, CRT-1053, U.S.A.)/Joe Satriani - The Extremist.cue/track0001
+[2026-08-20 01:24:42] Artist: Joe Satriani
+[2026-08-20 01:24:42] Title: Friends
+[2026-08-20 01:24:42] Extracting album art...
+[38;5;3mWARN[0m: Expected binary data but got 'OK' 
+[38;5;1mERROR[0m: Read MPD line with error line="ACK [50@0] {albumart} No file exists" 
+[38;5;1mERROR[0m: Read MPD line with error line="ACK [50@0] {albumart} No file exists" 
+[2026-08-20 01:24:42] ERROR: Album art extraction failed
+[2026-08-20 01:27:18] ========== Song Change Detected ==========
+[2026-08-20 01:27:18] File: Joe Satriani/1986 - Not Of This Earth (Relativity Records, 462972 2, Austria)/Joe Satriani - Not Of This Earth.cue/track0001
+[2026-08-20 01:27:18] Artist: Joe Satriani
+[2026-08-20 01:27:18] Title: Not Of This Earth
+[2026-08-20 01:27:18] Extracting album art...
+[38;5;3mWARN[0m: Expected binary data but got 'OK' 
+[38;5;1mERROR[0m: Read MPD line with error line="ACK [50@0] {albumart} No file exists" 
+[38;5;1mERROR[0m: Read MPD line with error line="ACK [50@0] {albumart} No file exists" 
+[2026-08-20 01:27:18] ERROR: Album art extraction failed
+[2026-08-21 17:44:59] ========== Song Change Detected ==========
+[2026-08-21 17:45:00] File: Joe Satriani/1986 - Not Of This Earth (Relativity Records, 462972 2, Austria)/Joe Satriani - Not Of This Earth.cue/track0002
+[2026-08-21 17:45:00] Artist: Joe Satriani
+[2026-08-21 17:45:00] Title: The Snake
+[2026-08-21 17:45:00] Extracting album art...
+[38;5;3mWARN[0m: Expected binary data but got 'OK' 
+[38;5;1mERROR[0m: Read MPD line with error line="ACK [50@0] {albumart} No file exists" 
+[38;5;1mERROR[0m: Read MPD line with error line="ACK [50@0] {albumart} No file exists" 
+[2026-08-21 17:45:00] ERROR: Album art extraction failed
+[2026-08-21 17:45:01] ========== Song Change Detected ==========
+[2026-08-21 17:45:01] File: Joe Satriani/1986 - Not Of This Earth (Relativity Records, 462972 2, Austria)/Joe Satriani - Not Of This Earth.cue/track0003
+[2026-08-21 17:45:01] Artist: Joe Satriani
+[2026-08-21 17:45:01] Title: Rubina
+[2026-08-21 17:45:01] Extracting album art...
+[38;5;3mWARN[0m: Expected binary data but got 'OK' 
+[38;5;1mERROR[0m: Read MPD line with error line="ACK [50@0] {albumart} No file exists" 
+[38;5;1mERROR[0m: Read MPD line with error line="ACK [50@0] {albumart} No file exists" 
+[2026-08-21 17:45:01] ERROR: Album art extraction failed
+[2026-08-21 17:45:07] ========== Song Change Detected ==========
+[2026-08-21 17:45:07] File: Joe Satriani/2006 - Super Colossal (Epic, 82876 76755 2, E.U.)/Joe Satriani - Super Colossal.cue/track0001
+[2026-08-21 17:45:07] Artist: Joe Satriani
+[2026-08-21 17:45:07] Title: Super Colossal
+[2026-08-21 17:45:07] Extracting album art...
+[38;5;3mWARN[0m: Expected binary data but got 'OK' 
+[38;5;1mERROR[0m: Read MPD line with error line="ACK [50@0] {albumart} No file exists" 
+[38;5;1mERROR[0m: Read MPD line with error line="ACK [50@0] {albumart} No file exists" 
+[2026-08-21 17:45:07] ERROR: Album art extraction failed
+[2026-08-21 17:51:33] ========== Song Change Detected ==========
+[2026-08-21 17:51:33] File: Joe Satriani/2006 - Super Colossal (Epic, 82876 76755 2, E.U.)/Joe Satriani - Super Colossal.cue/track0002
+[2026-08-21 17:51:33] Artist: Joe Satriani
+[2026-08-21 17:51:33] Title: Just Like Lightnin'
+[2026-08-21 17:51:33] Extracting album art...
+[38;5;3mWARN[0m: Expected binary data but got 'OK' 
+[38;5;1mERROR[0m: Read MPD line with error line="ACK [50@0] {albumart} No file exists" 
+[38;5;1mERROR[0m: Read MPD line with error line="ACK [50@0] {albumart} No file exists" 
+[2026-08-21 17:51:33] ERROR: Album art extraction failed
+[2026-08-21 17:53:20] ========== Song Change Detected ==========
+[2026-08-21 17:53:20] File: Joe Satriani/2008 - Professor Satchafunkilus And The Musterion Of Rock (Epic, 88697212622, E.U.)/Joe Satriani - Professor Satchafunkilus And The Musterion Of Rock.cue/track0001
+[2026-08-21 17:53:20] Artist: unknown
+[2026-08-21 17:53:20] Title: Musterion
+[2026-08-21 17:53:20] Extracting album art...
+[38;5;3mWARN[0m: Expected binary data but got 'OK' 
+[38;5;1mERROR[0m: Read MPD line with error line="ACK [50@0] {albumart} No file exists" 
+[38;5;1mERROR[0m: Read MPD line with error line="ACK [50@0] {albumart} No file exists" 
+[2026-08-21 17:53:20] ERROR: Album art extraction failed
+[2026-08-21 17:56:17] ========== Song Change Detected ==========
+[2026-08-21 17:56:17] File: Children of Bodom/2005 - Are You Dead Yet/Children Of Bodom - Are You Dead Yet.cue/track0001
+[2026-08-21 17:56:17] Artist: Children Of Bodom
+[2026-08-21 17:56:17] Title: Living Dead Beat
+[2026-08-21 17:56:17] Extracting album art...
+[38;5;3mWARN[0m: Expected binary data but got 'OK' 
+[38;5;1mERROR[0m: Read MPD line with error line="ACK [50@0] {albumart} No file exists" 
+[38;5;1mERROR[0m: Read MPD line with error line="ACK [50@0] {albumart} No file exists" 
+[2026-08-21 17:56:17] ERROR: Album art extraction failed
+[2026-08-21 17:59:02] ========== Song Change Detected ==========
+[2026-08-21 17:59:02] File: unknown
+[2026-08-21 17:59:02] Artist: unknown
+[2026-08-21 17:59:02] Title: unknown
+[2026-08-21 17:59:20] ========== Song Change Detected ==========
+[2026-08-21 17:59:20] File: unknown
+[2026-08-21 17:59:20] Artist: unknown
+[2026-08-21 17:59:20] Title: unknown
+[2026-08-21 17:59:33] ========== Song Change Detected ==========
+[2026-08-21 17:59:33] File: unknown
+[2026-08-21 17:59:33] Artist: unknown
+[2026-08-21 17:59:33] Title: unknown
+[2026-08-21 18:03:43] ========== Song Change Detected ==========
+[2026-08-21 18:03:43] File: Children of Bodom/2005 - Are You Dead Yet/Children Of Bodom - Are You Dead Yet.cue/track0002
+[2026-08-21 18:03:43] Artist: Children Of Bodom
+[2026-08-21 18:03:43] Title: Are You Dead Yet?
+[2026-08-21 18:03:43] Extracting album art...
+[38;5;3mWARN[0m: Expected binary data but got 'OK' 
+[38;5;1mERROR[0m: Read MPD line with error line="ACK [50@0] {albumart} No file exists" 
+[38;5;1mERROR[0m: Read MPD line with error line="ACK [50@0] {albumart} No file exists" 
+[2026-08-21 18:03:43] ERROR: Album art extraction failed
+[2026-08-21 18:03:52] ========== Song Change Detected ==========
+[2026-08-21 18:03:52] File: Children of Bodom/2005 - Are You Dead Yet/Children Of Bodom - Are You Dead Yet.cue/track0001
+[2026-08-21 18:03:52] Artist: Children Of Bodom
+[2026-08-21 18:03:52] Title: Living Dead Beat
+[2026-08-21 18:03:52] Extracting album art...
+[38;5;3mWARN[0m: Expected binary data but got 'OK' 
+[38;5;1mERROR[0m: Read MPD line with error line="ACK [50@0] {albumart} No file exists" 
+[38;5;1mERROR[0m: Read MPD line with error line="ACK [50@0] {albumart} No file exists" 
+[2026-08-21 18:03:52] ERROR: Album art extraction failed
+[2026-08-21 18:03:53] ========== Song Change Detected ==========
+[2026-08-21 18:03:53] File: Children of Bodom/2005 - Are You Dead Yet/Children Of Bodom - Are You Dead Yet.cue/track0002
+[2026-08-21 18:03:53] Artist: Children Of Bodom
+[2026-08-21 18:03:53] Title: Are You Dead Yet?
+[2026-08-21 18:03:53] Extracting album art...
+[38;5;3mWARN[0m: Expected binary data but got 'OK' 
+[38;5;1mERROR[0m: Read MPD line with error line="ACK [50@0] {albumart} No file exists" 
+[38;5;1mERROR[0m: Read MPD line with error line="ACK [50@0] {albumart} No file exists" 
+[2026-08-21 18:03:53] ERROR: Album art extraction failed
+[2026-08-21 18:08:26] ========== Song Change Detected ==========
+[2026-08-21 18:08:26] File: unknown
+[2026-08-21 18:08:26] Artist: unknown
+[2026-08-21 18:08:26] Title: unknown
+[2026-08-21 18:08:29] ========== Song Change Detected ==========
+[2026-08-21 18:08:29] File: unknown
+[2026-08-21 18:08:29] Artist: unknown
+[2026-08-21 18:08:29] Title: unknown
+[2026-09-21 16:58:58] ========== Song Change Detected ==========
+[2026-09-21 16:58:58] File: Children of Bodom/2005 - Are You Dead Yet/Children Of Bodom - Are You Dead Yet.cue/track0002
+[2026-09-21 16:58:58] Artist: Children Of Bodom
+[2026-09-21 16:58:58] Title: Are You Dead Yet?
+[2026-09-21 16:58:58] Extracting album art...
+[38;5;3mWARN[0m: Expected binary data but got 'OK' 
+[38;5;1mERROR[0m: Read MPD line with error line="ACK [50@0] {albumart} No file exists" 
+[38;5;1mERROR[0m: Read MPD line with error line="ACK [50@0] {albumart} No file exists" 
+[2026-09-21 16:58:58] ERROR: Album art extraction failed
+[2026-09-21 17:00:03] ========== Song Change Detected ==========
+[2026-09-21 17:00:03] File: unknown
+[2026-09-21 17:00:03] Artist: unknown
+[2026-09-21 17:00:03] Title: unknown
+[2026-09-21 17:00:39] ========== Song Change Detected ==========
+[2026-09-21 17:00:39] File: /home/vlvin/Music/Children of Bodom/2005 - Are You Dead Yet/Cover.jpg
+[2026-09-21 17:00:39] Artist: unknown
+[2026-09-21 17:00:39] Title: unknown
+[2026-09-21 17:00:39] Extracting album art...
+[38;5;3mWARN[0m: Expected binary data but got 'OK' 
+[38;5;1mERROR[0m: Read MPD line with error line="ACK [50@0] {albumart} No file exists" 
+[38;5;1mERROR[0m: Read MPD line with error line="ACK [50@0] {albumart} No file exists" 
+[2026-09-21 17:00:40] ERROR: Album art extraction failed
+[2026-09-21 17:02:10] ========== Song Change Detected ==========
+[2026-09-21 17:02:10] File: Children of Bodom/2005 - Are You Dead Yet/Children Of Bodom - Are You Dead Yet.cue/track0010
+[2026-09-21 17:02:10] Artist: Children Of Bodom
+[2026-09-21 17:02:10] Title: Oops!? I Did It Again
+[2026-09-21 17:02:10] Extracting album art...
+[38;5;3mWARN[0m: Expected binary data but got 'OK' 
+[38;5;1mERROR[0m: Read MPD line with error line="ACK [50@0] {albumart} No file exists" 
+[38;5;1mERROR[0m: Read MPD line with error line="ACK [50@0] {albumart} No file exists" 
+[2026-09-21 17:02:10] ERROR: Album art extraction failed
+[2026-09-21 17:05:12] ========== Song Change Detected ==========
+[2026-09-21 17:05:12] File: Joe Satriani/1986 - Not Of This Earth (Food For Thought, CD GRUB 7, France)/Joe Satriani - Not Of This Earth (CD GRUB 7).cue/track0001
+[2026-09-21 17:05:12] Artist: Joe Satriani
+[2026-09-21 17:05:12] Title: Not Of This Earth
+[2026-09-21 17:05:12] Extracting album art...
+[38;5;3mWARN[0m: Expected binary data but got 'OK' 
+[38;5;1mERROR[0m: Read MPD line with error line="ACK [50@0] {albumart} No file exists" 
+[38;5;1mERROR[0m: Read MPD line with error line="ACK [50@0] {albumart} No file exists" 
+[2026-09-21 17:05:12] ERROR: Album art extraction failed
+[2026-09-21 17:05:51] ========== Song Change Detected ==========
+[2026-09-21 17:05:51] File: Children of Bodom/1997 - Something Wild/Children Of Bodom - Something Wild.cue/track0001
+[2026-09-21 17:05:51] Artist: Children Of Bodom
+[2026-09-21 17:05:51] Title: Deadnight Warrior
+[2026-09-21 17:05:51] Extracting album art...
+[38;5;3mWARN[0m: Expected binary data but got 'OK' 
+[38;5;1mERROR[0m: Read MPD line with error line="ACK [50@0] {albumart} No file exists" 
+[38;5;1mERROR[0m: Read MPD line with error line="ACK [50@0] {albumart} No file exists" 
+[2026-09-21 17:05:51] ERROR: Album art extraction failed
+[2026-09-21 17:09:13] ========== Song Change Detected ==========
+[2026-09-21 17:09:13] File: Children of Bodom/1997 - Something Wild/Children Of Bodom - Something Wild.cue/track0002
+[2026-09-21 17:09:13] Artist: Children Of Bodom
+[2026-09-21 17:09:13] Title: In The Shadows
+[2026-09-21 17:09:13] Extracting album art...
+[38;5;3mWARN[0m: Expected binary data but got 'OK' 
+[38;5;1mERROR[0m: Read MPD line with error line="ACK [50@0] {albumart} No file exists" 
+[38;5;1mERROR[0m: Read MPD line with error line="ACK [50@0] {albumart} No file exists" 
+[2026-09-21 17:09:13] ERROR: Album art extraction failed
+[2026-09-21 17:11:06] ========== Song Change Detected ==========
+[2026-09-21 17:11:06] File: Children of Bodom/1997 - Something Wild/Children Of Bodom - Something Wild.cue/track0003
+[2026-09-21 17:11:06] Artist: Children Of Bodom
+[2026-09-21 17:11:06] Title: Red Light In My Eyes, Pt.1
+[2026-09-21 17:11:06] Extracting album art...
+[38;5;3mWARN[0m: Expected binary data but got 'OK' 
+[38;5;1mERROR[0m: Read MPD line with error line="ACK [50@0] {albumart} No file exists" 
+[38;5;1mERROR[0m: Read MPD line with error line="ACK [50@0] {albumart} No file exists" 
+[2026-09-21 17:11:06] ERROR: Album art extraction failed
+[2026-09-21 17:11:08] ========== Song Change Detected ==========
+[2026-09-21 17:11:08] File: Children of Bodom/1997 - Something Wild/Children Of Bodom - Something Wild.cue/track0002
+[2026-09-21 17:11:08] Artist: Children Of Bodom
+[2026-09-21 17:11:08] Title: In The Shadows
+[2026-09-21 17:11:08] Extracting album art...
+[38;5;3mWARN[0m: Expected binary data but got 'OK' 
+[38;5;1mERROR[0m: Read MPD line with error line="ACK [50@0] {albumart} No file exists" 
+[38;5;1mERROR[0m: Read MPD line with error line="ACK [50@0] {albumart} No file exists" 
+[2026-09-21 17:11:08] ERROR: Album art extraction failed

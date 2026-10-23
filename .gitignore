@@ -8,6 +8,7 @@
 !.config/dwl
 !.config/wmenu
 !.config/mango
+!.config/mangobar
 !.config/quickshell
 !.config/somebar
 !.config/someblocks
@@ -25,4 +26,6 @@
 !.config/runit
 !.config/scripts
 !.config/zathura
-
+!.config/driftwm
+!.config/rmpc
+!.config/scripts

@@ -21,7 +21,7 @@
 	url = https://github.com/Vlvin/somebar
 [submodule ".config/someblocks"]
 	path = .config/someblocks
-	url = https://github.com/Vlvin/someblocks
+	url = https://github.com/vlvin/someblocks
 [submodule ".config/shellrc/plugins/zsh-autosuggestions"]
 	path = .config/shellrc/plugins/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions

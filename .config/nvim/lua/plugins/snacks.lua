@@ -17,13 +17,9 @@ return {
 			dim = {
 				enabled = true,
 			},
-			image = {
-				enabled = false,
-				inline = true,
-        math = {
-          enabled = false
-        }
-			},
+			-- image = {
+			-- 	enabled = true,
+			-- },
 		})
 		local Snacks = require("snacks")
 

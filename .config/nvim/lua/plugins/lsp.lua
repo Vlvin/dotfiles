@@ -73,6 +73,7 @@ return {
         --     end
         --   })
         -- end
+        -- vim.lsp.semantic_tokens.enable(false)
 			end
 			opt.on_attach = opt.on_attach or custom_attach
 			if opt.name ~= nil then

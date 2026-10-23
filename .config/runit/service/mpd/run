@@ -1,3 +1,16 @@
 #!/bin/sh
 #install -d -m 0755 -o mpd -g mpd /run/mpd
+
+export USER=vlvin
+
+# 1. Grab your runtime user ID (usually 1000)
+USER_ID=$(id -u $USER)
+
+# 2. Re-populate the exact variables your audio server expects
+export XDG_RUNTIME_DIR="/run/user/$USER_ID"
+export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/$USER_ID/bus"
+
+# 3. Explicitly tell the modern audio server where to look
+export PIPEWIRE_RUNTIME_DIR="/run/user/$USER_ID"
+export PULSE_RUNTIME_DIR="/run/user/$USER_ID"
 exec mpd --no-daemon --verbose

@@ -13,12 +13,11 @@ return {
 				diagnostics = {
 					enable = true,
 				},
-        inlayHints = {
-          enable = true
-        }
+				inlayHints = {
+					enable = true,
+				},
 			},
 		},
-    autoinstall = false
 	},
 	["lua-language-server"] = {
 		name = "lua_ls",
@@ -58,20 +57,49 @@ return {
 			-- }
 		},
 	},
-  ["asm-lsp"] = {
+	["asm-lsp"] = {
 		filetypes = { "asm", "S", "s" },
 		root_markers = { "main.asm", "Makefile", ".asm-lsp.toml", ".git" },
-    autoinstall = false
-  },
-	basedpyright = {
-		cmd = { "basedpyright-langserver", "--stdio" },
+	},
+	-- basedpyright = {
+	--   cmd = { "basedpyright-langserver", "--stdio" },
+	--   filetypes = { "python" },
+	--   root_markers = { ".venv", "pyproject.toml", "ruff.toml", ".ruff.toml", ".git" },
+	--   settings = {
+	--     -- python = {
+	--     --   venvPath = ".venv"
+	--     -- },
+	--     basedpyright = {
+	--       disableOrganizeImports = true,
+	--       analysis = {
+	--         typeCheckingMode = "basic",
+	--         importFormat = "auto",
+	--         autoCompletions = true,
+	--         autoSearchPaths = true,
+	--         useLibraryCodeForTypes = true,
+	--       },
+	--     },
+	--   },
+	-- },
+	pyright = {
+		cmd = { "pyright-langserver", "--stdio" },
 		filetypes = { "python" },
-		root_markers = { ".venv", "pyproject.toml", "ruff.toml", ".ruff.toml", ".git" },
+		root_markers = {
+			".venv",
+			"pyproject.toml",
+			"setup.py",
+			"setup.cfg",
+			"requirements.txt",
+			"Pipfile",
+			"pyrightconfig.json",
+			"ruff.toml",
+			".ruff.toml",
+			".git",
+		},
+		single_file_support = true,
 		settings = {
-      -- python = {
-      --   venvPath = ".venv"
-      -- },
-			basedpyright = {
+			python = {
+				venvPath = ".venv",
 				disableOrganizeImports = true,
 				analysis = {
 					typeCheckingMode = "basic",
@@ -79,6 +107,7 @@ return {
 					autoCompletions = true,
 					autoSearchPaths = true,
 					useLibraryCodeForTypes = true,
+					diagnosticMode = "openFilesOnly",
 				},
 			},
 		},
@@ -87,9 +116,42 @@ return {
 		cmd = { "clangd", "--completion-style=detailed" },
 		root_markers = { ".clangd", "compile_commands.json" },
 		filetypes = { "c", "cpp" },
-    autoinstall = false
+		clangd = {
+			semanticHighlighting = true,
+		},
 	},
 	tinymist = {
 		filetypes = { "typst" },
+	},
+	vtsls = {
+		init_options = {
+			hostInfo = "neovim",
+			tsserver = {
+				path = "/usr/lib/node_modules/typescript/lib",
+			},
+		},
+		cmd = { "vtsls", "--stdio" },
+		filetypes = {
+			"javascript",
+			"javascriptreact",
+			"typescript",
+			"typescriptreact",
+		},
+		root_markers = { "tsconfig.json", "jsconfig.json", "package.json", ".git" },
+		single_file_support = true,
+	},
+	-- cmake = {
+	-- 	cmd = { "cmake-language-server" },
+	-- 	filetypes = { "cmake" },
+	-- 	root_markers = { "CMakePresets.json", "CTestConfig.cmake", ".git", "build", "cmake" },
+	-- 	init_options = {
+	-- 		buildDirectory = "build",
+	-- 	},
+	-- },
+	neocmake = {
+		cmd = { "neocmakelsp", "stdio" },
+		filetypes = { "cmake" },
+		root_markers = { ".git", "build", "cmake" },
+		single_file_support = true,
 	},
 }

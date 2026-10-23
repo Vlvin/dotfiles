@@ -1,2 +1,0 @@
-#!/usr/bin/env sh
-nmcli c show | awk -F '' 'BEGIN{FS=OFS=" "}/wifi/{NF-=3;print}' | wmenu -l 5 -f "FiraCode Nerd Font 12" -N 000000 -n 93A1A1 -M 000000 -m 93A1A1 -S 9900BB -s EEEEEE | xargs nmcli c up

@@ -709,6 +709,8 @@ c.colors.webpage.darkmode.policy.images = 'smart'
 ##   - both: Use both hosts blocking and Brave's ABP-style adblocker
 c.content.blocking.method = 'auto'
 
+
+
 ## A list of patterns that should always be loaded, despite being blocked
 ## by the ad-/host-blocker. Local domains are always exempt from
 ## adblocking. Note this whitelists otherwise blocked requests, not
@@ -1113,7 +1115,9 @@ c.content.blocking.method = 'auto'
 ##   - js-array-at
 ##   - misc-krunker
 ##   - misc-mathml-darkmode
-# c.content.site_specific_quirks.skip = []
+c.content.site_specific_quirks.skip = [
+        "ua-google"
+]
 
 ## How to proceed on TLS certificate errors.
 ## Type: String
@@ -2155,7 +2159,7 @@ c.tabs.show = 'always'
 ## the search engine name to the search term, e.g. `:open google
 ## qutebrowser`.
 ## Type: Dict
-# c.url.searchengines = {'DEFAULT': 'https://duckduckgo.com/?q={}'}
+c.url.searchengines = {'DEFAULT': 'https://duckduckgo.com/?q={}'}
 
 ## Page(s) to open at the start.
 ## Type: List of FuzzyUrl, or FuzzyUrl

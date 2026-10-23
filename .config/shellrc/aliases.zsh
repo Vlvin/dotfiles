@@ -15,6 +15,7 @@ alias dv='deactivate'
 alias denv='. $HOME/.zshrc'
 alias tmux='wl-copy $(pwd);cd ~; tmux'
 alias ls='ls --color=auto'
+alias fcd='cd "$(fzf --walker=dir --walker-root=/)"'
 
 alias _nvim='~/.local/share/bob/$(cat ~/.local/share/bob/used)/bin/nvim'
 
@@ -23,7 +24,7 @@ function nvim {
   export IS_NVIM_c=HELLO
   NVIM_SOCK=$(mktemp -p $HOME/.cache/nvim/socks -t nvim.sock.XXX)
   NVIM_SESS=$HOME/.cache/nvim/sessions/${NVIM_SOCK##*/}
-  ln -sn $NVIM_SOCK $NVIM_SESS
+  ln -s $NVIM_SOCK $NVIM_SESS
   rm $NVIM_SOCK
   _nvim --listen $NVIM_SESS $@
   unset IS_NVIM_c

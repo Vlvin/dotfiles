@@ -1,2 +1,3 @@
 #!/usr/bin/env sh
-grim -g $(slurp -d) png - | wl-copy -t image/png
+exec grim -g "$(slurp -d)" -t png - | wl-copy -t image/png
+

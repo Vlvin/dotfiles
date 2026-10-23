@@ -20,6 +20,8 @@ settings:
     global: true
   content.blocking.method:
     global: both
+  content.images:
+    global: true
   content.javascript.clipboard:
     https://github.com: access-paste
     https://windsurf.com: access-paste
